@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Auro ProBud X1 — Premium wireless earbuds with 40-hour battery, hybrid ANC, and spatial audio. Sound that moves with you." />
+  <title>Auro ProBud X1 | Premium Wireless Earbuds — Auro Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Auro Tech — home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <polygon points="14,2 20,10 26,18 14,26 2,18 8,10" fill="#F59E0B"/>
+        </svg>
+        <span>Auro</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#specs" class="nav-link">Specs</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <button class="cart-btn" id="cart-btn" aria-label="Open cart, 0 items">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M2 2h2l2.4 12.4a2 2 0 002 1.6H16a2 2 0 001.96-1.6L19.5 7H5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1" fill="currentColor"/><circle cx="16" cy="20" r="1" fill="currentColor"/></svg>
+          <span class="cart-badge" id="cart-badge" aria-live="polite" aria-atomic="true">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" role="dialog" aria-modal="true">
+    <div class="cart-header">
+      <h2 class="cart-title">Your Cart</h2>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button class="btn btn-amber btn-full" id="checkout-btn">Checkout</button>
+      <button class="btn btn-ghost btn-full" id="continue-btn">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ===== PRODUCT HERO ===== -->
+    <section class="product-hero" id="product" aria-labelledby="product-name">
+      <div class="container product-inner">
+
+        <!-- Image Column -->
+        <div class="product-images">
+          <div class="main-image-wrap">
+            <img class="main-image" id="main-image"
+              src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80"
+              alt="Auro ProBud X1 wireless earbuds" loading="eager" width="600" height="600" />
+          </div>
+          <div class="thumbnail-strip">
+            <button class="thumb-btn active" aria-label="View Midnight Black color" data-color="Midnight Black">
+              <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=150&q=80" alt="ProBud X1 in Midnight Black" width="80" height="80" />
+            </button>
+            <button class="thumb-btn" aria-label="View Arctic White color" data-color="Arctic White">
+              <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=150&q=80" alt="ProBud X1 in Arctic White" width="80" height="80" style="filter: brightness(1.4) saturate(0);" />
+            </button>
+            <button class="thumb-btn" aria-label="View Cobalt Blue color" data-color="Cobalt Blue">
+              <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=150&q=80" alt="ProBud X1 in Cobalt Blue" width="80" height="80" style="filter: hue-rotate(200deg) saturate(1.5);" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Details Column -->
+        <div class="product-details">
+          <p class="product-brand">Auro Tech</p>
+          <h1 class="product-name" id="product-name">ProBud X1</h1>
+          <div class="product-rating" aria-label="4.7 out of 5 stars, 328 reviews">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.7</span>
+            <span class="rating-count">(328 reviews)</span>
+          </div>
+
+          <div class="product-price">
+            <span class="price-original" aria-label="Original price $189">$189</span>
+            <span class="price-current" aria-label="Sale price $149">$149</span>
+            <span class="price-save">Save $40</span>
+          </div>
+
+          <!-- Color selector -->
+          <div class="selector-group">
+            <label class="selector-label">Color: <span id="selected-color">Midnight Black</span></label>
+            <div class="color-swatches">
+              <button class="swatch swatch-black active" data-color="Midnight Black" aria-label="Select Midnight Black" aria-pressed="true"></button>
+              <button class="swatch swatch-white" data-color="Arctic White" aria-label="Select Arctic White" aria-pressed="false"></button>
+              <button class="swatch swatch-blue" data-color="Cobalt Blue" aria-label="Select Cobalt Blue" aria-pressed="false"></button>
+            </div>
+          </div>
+
+          <!-- Quantity selector -->
+          <div class="selector-group">
+            <label class="selector-label" for="qty-input">Quantity</label>
+            <div class="qty-control">
+              <button class="qty-btn" id="qty-minus" aria-label="Decrease quantity">−</button>
+              <input type="number" id="qty-input" value="1" min="1" max="10" aria-label="Quantity" readonly />
+              <button class="qty-btn" id="qty-plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <button class="btn btn-amber btn-full" id="add-to-cart">Add to Cart</button>
+            <button class="btn btn-outline btn-full" id="buy-now">Buy Now</button>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9l3 3 3-3 3 3 3-3 2 2" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Free Shipping</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2a7 7 0 100 14A7 7 0 009 2zm0 4v4l3 1.5" stroke="#10B981" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span>30-Day Returns</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2l1.5 5h5l-4 3 1.5 5L9 12l-4 3 1.5-5-4-3h5z" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>2-Year Warranty</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="benefits section" id="features" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Why ProBud X1</p>
+          <h2 id="benefits-heading" class="section-title">Built for your life,<br>not just your desk.</h2>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🔋</div>
+            <h3>40h Battery Life</h3>
+            <p>8 hours per charge plus 32 from the case. Power through a full work week without searching for a cable.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🎧</div>
+            <h3>Active Noise Cancellation</h3>
+            <p>Three-mic array blocks up to 98% of ambient noise. Stay in the zone whether you're on a plane or in a café.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🔊</div>
+            <h3>Spatial Audio</h3>
+            <p>Immersive 360° soundstage tuned for both music and calls by our acoustic engineering team.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💧</div>
+            <h3>IPX5 Waterproof</h3>
+            <p>Sweat-proof and rain-resistant. Built for your lifestyle — runs, commutes, and everything between.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIFICATIONS ===== -->
+    <section class="specs section section-alt" id="specs" aria-labelledby="specs-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Technical Details</p>
+          <h2 id="specs-heading" class="section-title">Specifications</h2>
+        </div>
+        <div class="specs-table-wrap">
+          <table class="specs-table" aria-label="ProBud X1 technical specifications">
+            <tbody>
+              <tr><th scope="row">Driver Size</th><td>11mm dynamic driver</td></tr>
+              <tr><th scope="row">Frequency Response</th><td>20Hz – 22kHz</td></tr>
+              <tr><th scope="row">Connectivity</th><td>Bluetooth 5.3, multipoint (2 devices)</td></tr>
+              <tr><th scope="row">Active Noise Cancellation</th><td>Hybrid ANC, up to −35dB</td></tr>
+              <tr><th scope="row">Battery (earbuds)</th><td>8 hours (ANC on) / 10 hours (ANC off)</td></tr>
+              <tr><th scope="row">Battery (case)</th><td>32 hours additional</td></tr>
+              <tr><th scope="row">Charging</th><td>USB-C + wireless Qi</td></tr>
+              <tr><th scope="row">Water Resistance</th><td>IPX5</td></tr>
+              <tr><th scope="row">Weight</th><td>5.2g per earbud</td></tr>
+              <tr><th scope="row">Compatibility</th><td>iOS, Android, Windows, macOS</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING / BUNDLES ===== -->
+    <section class="pricing section" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Purchase Options</p>
+          <h2 id="pricing-heading" class="section-title">Choose Your Bundle</h2>
+        </div>
+        <div class="bundles-grid">
+
+          <div class="bundle-card">
+            <h3 class="bundle-name">1 Unit</h3>
+            <div class="bundle-price">
+              <span class="bundle-original">$189</span>
+              <span class="bundle-current">$149</span>
+            </div>
+            <p class="bundle-desc">ProBud X1 earbuds + charging case. Available in 3 colors.</p>
+            <ul class="bundle-includes">
+              <li>ProBud X1 earbuds</li>
+              <li>Charging case (32hr)</li>
+              <li>USB-C cable</li>
+              <li>3 ear tip sizes</li>
+            </ul>
+            <button class="btn btn-outline btn-full bundle-atc" data-id="unit-1" data-name="ProBud X1 — 1 Unit" data-price="149">Add to Cart</button>
+          </div>
+
+          <div class="bundle-card bundle-card--featured">
+            <div class="bundle-badge">Best Value</div>
+            <h3 class="bundle-name">2-Unit Bundle</h3>
+            <div class="bundle-price">
+              <span class="bundle-original">$298</span>
+              <span class="bundle-current">$269</span>
+            </div>
+            <p class="bundle-desc">Two sets of ProBud X1 — perfect for couples or gift sets.</p>
+            <ul class="bundle-includes">
+              <li>2× ProBud X1 earbuds</li>
+              <li>2× charging cases</li>
+              <li>2× USB-C cables</li>
+              <li>Save an extra $29</li>
+            </ul>
+            <button class="btn btn-amber btn-full bundle-atc" data-id="bundle-2" data-name="ProBud X1 — 2-Unit Bundle" data-price="269">Add to Cart</button>
+          </div>
+
+          <div class="bundle-card">
+            <h3 class="bundle-name">Bundle + Case Cover</h3>
+            <div class="bundle-price">
+              <span class="bundle-original">$199</span>
+              <span class="bundle-current">$179</span>
+            </div>
+            <p class="bundle-desc">ProBud X1 plus a premium silicone protective case for your charging case.</p>
+            <ul class="bundle-includes">
+              <li>ProBud X1 earbuds</li>
+              <li>Charging case</li>
+              <li>Silicone protective cover</li>
+              <li>USB-C cable</li>
+            </ul>
+            <button class="btn btn-outline btn-full bundle-atc" data-id="bundle-cover" data-name="ProBud X1 + Case Cover" data-price="179">Add to Cart</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq section section-alt" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Got Questions?</p>
+          <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do the ProBud X1 work with Android?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer" hidden><p>Yes — ProBud X1 supports all Android devices running Android 6.0 or later, as well as iOS, Windows, and macOS.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What's included in the warranty?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer" hidden><p>All ProBud X1 units come with a 2-year limited warranty from the date of purchase, covering manufacturing defects and hardware malfunctions. Accidental damage is not included.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I use one earbud at a time?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer" hidden><p>Yes — both the left and right earbuds work independently in mono mode. Great for calls when you need to stay aware of your surroundings.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does it take to charge the case?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer" hidden><p>The case charges fully in approximately 90 minutes via USB-C. Wireless Qi charging (10W) takes about 2.5 hours.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are replacement ear tips available?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer" hidden><p>Yes — three ear tip sizes (S, M, L) are included with every unit. Additional sizes and memory foam tips are available in the Auro accessories store.</p></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Auro Tech home">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"><polygon points="14,2 20,10 26,18 14,26 2,18 8,10" fill="#F59E0B"/></svg>
+          <span>Auro</span>
+        </a>
+        <p>Sound that moves with you.</p>
+        <p class="footer-shipping">Free worldwide shipping on orders over $99.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#product">ProBud X1</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#specs">Specifications</a></li>
+          <li><a href="#pricing">Bundles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#home">Warranty</a></li>
+          <li><a href="#home">Returns</a></li>
+          <li><a href="#home">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-col">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#home" class="social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#home" class="social-link" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 9.5l5 2.5-5 2.5v-5z" fill="currentColor"/></svg>
+          </a>
+          <a href="#home" class="social-link" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Auro Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
